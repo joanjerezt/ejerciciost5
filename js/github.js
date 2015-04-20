@@ -1,7 +1,6 @@
 var API_BASE_URL = "https://api.github.com";
-var USERNAME;
-var PASSWORD;
-
+var USERNAME=parent.usuari;
+var PASSWORD=parent.contrasenya;
 $.ajaxSetup({
     headers: { 'Authorization': "Basic "+ btoa(USERNAME+':'+PASSWORD) }
 });
